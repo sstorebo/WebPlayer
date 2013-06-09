@@ -1,10 +1,15 @@
 */ README */
-This project was created due to no youtube standalone players existing that actually worked.
+So one night i wanted to watch a youtube move on my computer while doing some work. 
+Problem was that running it in my webbrowser i had all those anoying ads and white space around it, and had to 
+Second issue is that i couldn't have it always on top.
+
+I found some solutions, but problem was that they hadn't been updated for some time or just didn't work.
 So I decided to make one myself.
 
 
 /* TECHNOLOGY */
-Application is IE browser based and need Adobe Flash to operate.
+The application is IE browser based and need Adobe Flash to operate.
+It works as a normal application with a webbrowser included and it uses the YouTube Embedded Flash player to show the movie.
 
 /* CODE */
 The application is coded in VB.NET
