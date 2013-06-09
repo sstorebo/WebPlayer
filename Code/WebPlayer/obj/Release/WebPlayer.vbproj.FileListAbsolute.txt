@@ -1,0 +1,10 @@
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\bin\Release\WebPlayer.exe.config
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\bin\Release\WebPlayer.exe
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\bin\Release\WebPlayer.pdb
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\bin\Release\WebPlayer.xml
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.Form1.resources
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.Resources.resources
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.vbproj.GenerateResource.Cache
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.exe
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.xml
+c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.pdb

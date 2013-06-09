@@ -8,3 +8,14 @@ Application is IE browser based and need Adobe Flash to operate.
 
 /* CODE */
 The application is coded in VB.NET
+
+
+/* REQUIREMENTS */
+* Internet Explorer
+* Adobe Flash
+* NET Framework 4.5
+
+
+/* OS */
+Tested on:
+* Windows 7 Professional, 64bit
