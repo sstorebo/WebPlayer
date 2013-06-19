@@ -8,3 +8,13 @@ c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Re
 c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.exe
 c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.xml
 c:\users\bruker\documents\visual studio 2012\Projects\WebPlayer\WebPlayer\obj\Release\WebPlayer.pdb
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\bin\Release\WebPlayer.exe.config
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\obj\Release\WebPlayer.exe
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\obj\Release\WebPlayer.xml
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\obj\Release\WebPlayer.pdb
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\bin\Release\WebPlayer.exe
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\bin\Release\WebPlayer.pdb
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\bin\Release\WebPlayer.xml
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\obj\Release\WebPlayer.Form1.resources
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\obj\Release\WebPlayer.Resources.resources
+C:\Users\Bruker\Documents\GitHub\WebPlayer\Code\WebPlayer\obj\Release\WebPlayer.vbproj.GenerateResource.Cache

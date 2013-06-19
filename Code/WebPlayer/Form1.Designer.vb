@@ -27,17 +27,22 @@ Partial Class Form1
         Me.btnLoad = New System.Windows.Forms.Button()
         Me.txtUrl = New System.Windows.Forms.TextBox()
         Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlInstructions = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.OpenMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenYoutubeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenNetflixToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AlwaysOnTopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.DebugToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lblURL = New System.Windows.Forms.Label()
+        Me.lblDebug = New System.Windows.Forms.Label()
+        Me.EnableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlControl.SuspendLayout()
         Me.pnlInstructions.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -80,6 +85,16 @@ Partial Class Form1
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(215, 110)
         Me.pnlControl.TabIndex = 3
+        Me.pnlControl.Visible = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(140, 58)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(61, 42)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "X"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -101,6 +116,16 @@ Partial Class Form1
         Me.pnlInstructions.Name = "pnlInstructions"
         Me.pnlInstructions.Size = New System.Drawing.Size(350, 276)
         Me.pnlInstructions.TabIndex = 4
+        Me.pnlInstructions.Visible = False
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(106, 210)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(102, 42)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Close"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -109,14 +134,14 @@ Partial Class Form1
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
         Me.Label2.Location = New System.Drawing.Point(5, 14)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(342, 180)
+        Me.Label2.Size = New System.Drawing.Size(78, 20)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = resources.GetString("Label2.Text")
+        Me.Label2.Text = "How to use:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenMenuToolStripMenuItem, Me.HelpToolStripMenuItem, Me.HelpToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenMenuToolStripMenuItem, Me.HelpToolStripMenuItem, Me.HelpToolStripMenuItem1, Me.DebugToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(730, 24)
@@ -125,11 +150,23 @@ Partial Class Form1
         '
         'OpenMenuToolStripMenuItem
         '
-        Me.OpenMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenYoutubeToolStripMenuItem})
+        Me.OpenMenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenYoutubeToolStripMenuItem, Me.OpenNetflixToolStripMenuItem})
         Me.OpenMenuToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.OpenMenuToolStripMenuItem.Name = "OpenMenuToolStripMenuItem"
         Me.OpenMenuToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.OpenMenuToolStripMenuItem.Text = "File"
+        '
+        'OpenYoutubeToolStripMenuItem
+        '
+        Me.OpenYoutubeToolStripMenuItem.Name = "OpenYoutubeToolStripMenuItem"
+        Me.OpenYoutubeToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.OpenYoutubeToolStripMenuItem.Text = "Open Youtube"
+        '
+        'OpenNetflixToolStripMenuItem
+        '
+        Me.OpenNetflixToolStripMenuItem.Name = "OpenNetflixToolStripMenuItem"
+        Me.OpenNetflixToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.OpenNetflixToolStripMenuItem.Text = "Open Netflix"
         '
         'HelpToolStripMenuItem
         '
@@ -138,12 +175,6 @@ Partial Class Form1
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.HelpToolStripMenuItem.Text = "Options"
-        '
-        'OpenYoutubeToolStripMenuItem
-        '
-        Me.OpenYoutubeToolStripMenuItem.Name = "OpenYoutubeToolStripMenuItem"
-        Me.OpenYoutubeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.OpenYoutubeToolStripMenuItem.Text = "Open Youtube"
         '
         'AlwaysOnTopToolStripMenuItem
         '
@@ -158,23 +189,43 @@ Partial Class Form1
         Me.HelpToolStripMenuItem1.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem1.Text = "Help"
         '
-        'Button1
+        'DebugToolStripMenuItem
         '
-        Me.Button1.Location = New System.Drawing.Point(140, 58)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(61, 42)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "X"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.DebugToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EnableToolStripMenuItem})
+        Me.DebugToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.DebugToolStripMenuItem.Name = "DebugToolStripMenuItem"
+        Me.DebugToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
+        Me.DebugToolStripMenuItem.Text = "Debug"
         '
-        'Button2
+        'lblURL
         '
-        Me.Button2.Location = New System.Drawing.Point(106, 210)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(102, 42)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Close"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.lblURL.AutoSize = True
+        Me.lblURL.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblURL.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblURL.Location = New System.Drawing.Point(259, 5)
+        Me.lblURL.Name = "lblURL"
+        Me.lblURL.Size = New System.Drawing.Size(49, 16)
+        Me.lblURL.TabIndex = 5
+        Me.lblURL.Text = "DEBUG:"
+        Me.lblURL.Visible = False
+        '
+        'lblDebug
+        '
+        Me.lblDebug.AutoSize = True
+        Me.lblDebug.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDebug.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblDebug.Location = New System.Drawing.Point(258, 24)
+        Me.lblDebug.Name = "lblDebug"
+        Me.lblDebug.Size = New System.Drawing.Size(49, 16)
+        Me.lblDebug.TabIndex = 7
+        Me.lblDebug.Text = "DEBUG:"
+        Me.lblDebug.Visible = False
+        '
+        'EnableToolStripMenuItem
+        '
+        Me.EnableToolStripMenuItem.Name = "EnableToolStripMenuItem"
+        Me.EnableToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EnableToolStripMenuItem.Text = "Enable"
         '
         'Form1
         '
@@ -182,6 +233,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(730, 427)
+        Me.Controls.Add(Me.lblDebug)
+        Me.Controls.Add(Me.lblURL)
         Me.Controls.Add(Me.pnlInstructions)
         Me.Controls.Add(Me.pnlControl)
         Me.Controls.Add(Me.MoviePlayer)
@@ -216,5 +269,10 @@ Partial Class Form1
     Friend WithEvents HelpToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents OpenNetflixToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents lblURL As System.Windows.Forms.Label
+    Friend WithEvents lblDebug As System.Windows.Forms.Label
+    Friend WithEvents DebugToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EnableToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
